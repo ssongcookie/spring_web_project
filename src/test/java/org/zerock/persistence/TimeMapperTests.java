@@ -21,5 +21,12 @@ public class TimeMapperTests {
 	    public void testGetTime(){
 	        log.info(timeMapper.getClass().getName()); //실제 동작하는 클래스의 이름을 확인해줌
 	        log.info(timeMapper.getTime());
+	       
+	    }
+	    
+	    @Test
+	    public void testGetTime2() {
+	    	log.info("getTime2");
+	        log.info(timeMapper.getTime2());
 	    }
 }
