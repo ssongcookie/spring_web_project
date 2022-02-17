@@ -4,14 +4,15 @@ import lombok.Data;
 
 @Data
 public class PageDTO {
-
+//생성자 정의
 	private int startPage;
 	private int endPage;
 	private boolean prev, next;
 	
 	private int total;
 	private Criteria cri;
-	
+
+	//Criteria, total을 파라미터로 지정 
 	public PageDTO(Criteria cri, int total) {
 		
 		this.cri = cri;
